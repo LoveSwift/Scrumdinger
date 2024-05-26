@@ -23,7 +23,6 @@ struct CardView: View {
                       systemImage: "person.3")
                 .accessibilityLabel("\(scrum.attendees.count) attendees")
 
-                
                 Spacer()
                 
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
@@ -32,7 +31,7 @@ struct CardView: View {
                     .labelStyle(.trailingIcon)
             }
             .font(.caption)
-            .foregroundStyle(scrum.theme.accentColor)
+            .foregroundColor(scrum.theme.accentColor)
             Spacer()
         }
     }
@@ -45,16 +44,3 @@ struct CardView: View {
 
 }
 
-
-struct TrailingIconLabelStyle: LabelStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        HStack {
-                   configuration.title
-                   configuration.icon
-            }
-    }
-}
-
-extension LabelStyle where Self == TrailingIconLabelStyle {
-    static var trailingIcon: Self { Self() }
-}

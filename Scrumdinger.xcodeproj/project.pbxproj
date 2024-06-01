@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181DAA112C0AE0CD00298ECC /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DAA102C0AE0CD00298ECC /* DetailEditView.swift */; };
 		18FD4CAD2C01C57100D1C099 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4CAC2C01C57100D1C099 /* Theme.swift */; };
 		18FD4CAF2C01C5C400D1C099 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4CAE2C01C5C400D1C099 /* DailyScrum.swift */; };
 		18FD4CB12C01C60000D1C099 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4CB02C01C60000D1C099 /* CardView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181DAA102C0AE0CD00298ECC /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		18FD4CAC2C01C57100D1C099 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		18FD4CAE2C01C5C400D1C099 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		18FD4CB02C01C60000D1C099 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				18FD4CB22C02F9D500D1C099 /* ScrumsView.swift */,
 				18FD4CB42C0326FA00D1C099 /* TrailingIconLabelStyle.swift */,
 				18FD4CB62C03272300D1C099 /* DetailView.swift */,
+				181DAA102C0AE0CD00298ECC /* DetailEditView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				18FD4CAF2C01C5C400D1C099 /* DailyScrum.swift in Sources */,
 				18FD4CB72C03272300D1C099 /* DetailView.swift in Sources */,
+				181DAA112C0AE0CD00298ECC /* DetailEditView.swift in Sources */,
 				18FD4CB32C02F9D500D1C099 /* ScrumsView.swift in Sources */,
 				18FD4CB52C0326FA00D1C099 /* TrailingIconLabelStyle.swift in Sources */,
 				18FD4CAD2C01C57100D1C099 /* Theme.swift in Sources */,

@@ -23,6 +23,7 @@ struct DetailEditView: View {
 
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
+                        .accessibilityHidden(true)
                 }
                 
                 ThemePicker(selection: $scrum.theme)
@@ -46,13 +47,11 @@ struct DetailEditView: View {
                     }) {
                         Image(systemName: "plus.circle.fill")
                             .accessibilityLabel("Add attendee")
-
                     }
                     .disabled(newAttendeeName.isEmpty)
                 }
             }
         }
-        
     }
 }
 

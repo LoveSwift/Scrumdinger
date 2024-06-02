@@ -10,9 +10,9 @@ import SwiftUI
 struct DetailView: View {
     @Binding var scrum: DailyScrum
 
-    @State private var isPresentingEditView = false
     @State private var editingScrum = DailyScrum.emptyScrum
-
+    @State private var isPresentingEditView = false
+    
     var body: some View {
         List {
             Section(header: Text("Meeting Info")) {
@@ -35,16 +35,20 @@ struct DetailView: View {
                         .foregroundColor(scrum.theme.accentColor)
                         .background(scrum.theme.mainColor)
                         .cornerRadius(4)
-                    
-
                 }
+                .accessibilityElement(children: .combine)
             }
-            .accessibilityElement(children: .combine)
-
             Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) { attendee in
                     Label(attendee.name, systemImage: "person")
                 }
+            }
+        }
+        .navigationTitle(scrum.title)
+        .toolbar {
+            Button("Edit") {
+                isPresentingEditView = true
+                editingScrum = scrum
             }
         }
         .sheet(isPresented: $isPresentingEditView) {
@@ -66,13 +70,6 @@ struct DetailView: View {
                     }
             }
         }
-        .navigationTitle(scrum.title)
-        .toolbar {
-                Button("Edit") {
-                    isPresentingEditView = true
-                    editingScrum = scrum
-                }
-            }
     }
 }
 

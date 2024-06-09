@@ -16,6 +16,7 @@
 		18DCEA252C15742B006B180D /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18DCEA222C15742B006B180D /* ding.wav */; };
 		18DCEA282C1578C6006B180D /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEA272C1578C6006B180D /* NewScrumSheet.swift */; };
 		18DCEA2A2C157BD0006B180D /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEA292C157BD0006B180D /* History.swift */; };
+		18DCEA2C2C15A251006B180D /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEA2B2C15A251006B180D /* ScrumStore.swift */; };
 		18FD4CAD2C01C57100D1C099 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4CAC2C01C57100D1C099 /* Theme.swift */; };
 		18FD4CAF2C01C5C400D1C099 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4CAE2C01C5C400D1C099 /* DailyScrum.swift */; };
 		18FD4CB12C01C60000D1C099 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4CB02C01C60000D1C099 /* CardView.swift */; };
@@ -58,6 +59,7 @@
 		18DCEA222C15742B006B180D /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		18DCEA272C1578C6006B180D /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		18DCEA292C157BD0006B180D /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		18DCEA2B2C15A251006B180D /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		18FD4CAC2C01C57100D1C099 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		18FD4CAE2C01C5C400D1C099 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		18FD4CB02C01C60000D1C099 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				18FD4CAE2C01C5C400D1C099 /* DailyScrum.swift */,
 				18DCEA1E2C156A61006B180D /* ScrumTimer.swift */,
 				18DCEA292C157BD0006B180D /* History.swift */,
+				18DCEA2B2C15A251006B180D /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DCEA2C2C15A251006B180D /* ScrumStore.swift in Sources */,
 				181DAA152C0B0DB700298ECC /* ThemePicker.swift in Sources */,
 				18FD4CAF2C01C5C400D1C099 /* DailyScrum.swift in Sources */,
 				18FD4CB72C03272300D1C099 /* DetailView.swift in Sources */,

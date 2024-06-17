@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+@MainActor
 class ScrumStore: ObservableObject {
     
     @Published var scrums: [DailyScrum] = []
@@ -23,9 +23,8 @@ class ScrumStore: ObservableObject {
     func load() async throws {
         let task = Task<[DailyScrum], Error> {
             let fileURL = try Self.fileURL()
-            guard let data = try? Data(contentsOf: fileURL) else {
-                return []
-            }
+            print(fileURL)
+            let data = try Data(contentsOf: fileURL) 
             let dailyScrums = try JSONDecoder().decode([DailyScrum].self, from: data)
             return dailyScrums
         }
